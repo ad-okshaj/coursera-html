@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }     
+  
+  .custom{
+    overflow: none;
+    width: 100%;
+    }
+  
+  
+body{
+     padding: 0;
+     margin: 0;
+     font-family: "Comic Sans MS", cursive, serif;
+  }
+
+h1 {
+    color: red;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 30px;
+    }
+  
+.content-name{
+    position: relative;
+    overflow: none;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+    border: 4px solid black;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    margin-right: 36px;
+    margin-top: 0px;
+    }
+  
+  .content{
+    border: 5px solid black;
+    width: 90%;
+    height: auto;
+    margin: 2.5%;
+    color: black
+    font-size: 25px;
+    padding: 5%;
+    padding-top: 55px;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  .name1{
+    background-color: pink;
+  }
+  .name2{
+    color: white;
+    background-color: red;
+  }
+  .name3{
+    background-color: yellow;
+  }
+  
+  /* this is for large devices. */
+  @media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+      width: 33.33%;
+    }
+  }
+  
+  /* this is for medium devices. */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,.col-md-12 {
+      float: left;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      margin-left: -10px;
+      width: 100%;
+    }
+    .name3{
+      margin-right: 65px;
+      width: 100px;
+    }
+  }
+  
+  /* this is for smaller devices. */
+  @media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+      width: 100%;
+    }
+    .content-name{
+      margin-right: 30px;
+    }
+  }
